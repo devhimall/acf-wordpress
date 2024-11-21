@@ -1,0 +1,122 @@
+.slider {
+  padding-bottom: 12px;
+  .slides {
+    display: flex;
+    flex-direction: column;
+    position: relativeive;
+    padding: 50px 0px;
+    overflow: hidden;
+    width: 60%;
+
+    .slide-wrapper {
+      width: 100%;
+
+      .slide {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+        // width: 500px;
+
+        margin: auto;
+
+        .image-wrapper {
+          height: 200px;
+          width: 200px;
+          border-radius: 100%;
+          overflow: hidden;
+
+          img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: top;
+          }
+        }
+
+        /* style for content wrapper */
+        .content {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          text-align: center;
+          max-width: 80%;
+          gap: 20px;
+
+          .footer {
+            width: 100%;
+            height: fit-content;
+            display: flex;
+            justify-content: space-between;
+            background-color: transparent !important;
+
+            .name-bio {
+              display: flex;
+              flex-direction: column;
+              gap: 10px;
+              padding: 0px 20px;
+              .name {
+                width: 100%;
+                text-align: start;
+                margin: 0px;
+                text-transform: capitalize;
+              }
+              .company {
+                height: fit-content;
+                margin: 0px;
+                text-align: start;
+              }
+            }
+
+            /* rating styles */
+            .ratings {
+              margin: 0px;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .slick-dots {
+    bottom: 0;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .slider {
+    .slides {
+      .slide-wrapper {
+        .slide {
+          .content {
+            width: 70%;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .slider {
+    .slides {
+      .slide-wrapper {
+        .slide {
+          .content {
+            max-width: 500px;
+            padding: 0px 20px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .slider {
+    .slides {
+      width: 40%;
+    }
+  }
+}

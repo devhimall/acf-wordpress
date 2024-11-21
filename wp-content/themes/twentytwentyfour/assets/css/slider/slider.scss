@@ -1,0 +1,82 @@
+.slider {
+  padding-bottom: 12px;
+  .slides {
+    display: flex;
+    flex-direction: column;
+    position: relativeive;
+    padding: 50px 0px;
+    overflow: hidden;
+
+    .slide-wrapper {
+      width: 700px;
+
+      .slide {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        width: 500px;
+        margin: auto;
+
+        .image-wrapper {
+          height: 200px;
+          width: 200px;
+          border-radius: 100%;
+          overflow: hidden;
+
+          img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: top;
+          }
+        }
+
+        /* style for content wrapper */
+        .content {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          text-align: center;
+          padding: 0px 5%;
+          gap: 50px;
+
+          .footer {
+            width: 100%;
+            height: fit-content;
+            display: flex;
+            justify-content: space-between;
+
+            .name-bio {
+              display: flex;
+              align-items: center;
+              flex-direction: column;
+              gap: 10px;
+              padding: 0px 20px;
+              .name {
+                width: 100%;
+                text-align: start;
+                margin: 0px;
+                text-transform: capitalize;
+              }
+              .company {
+                height: fit-content;
+                margin: 0px;
+              }
+            }
+
+            /* rating styles */
+            .ratings {
+              margin: 0px;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .slick-dots {
+    bottom: 0;
+  }
+}
