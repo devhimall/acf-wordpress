@@ -13,23 +13,17 @@
 
   var initializeBlock = function ($block) {
     // Ensure the correct Swiper instance is created for the current block
-    const swiperContainer = $block.find(".mySwiper")[0] // Select Swiper container
-    const nextButton = $block.find(".swiper-button-next")[0] // Select navigation next button
-    const prevButton = $block.find(".swiper-button-prev")[0] // Select navigation prev button
+    const swiperContainer = $block.find(".mySwiper")[0]
 
     if (swiperContainer) {
       new Swiper(swiperContainer, {
-        slidesPerView: 3,
+        slidesPerView: 1,
         spaceBetween: 30,
         loop: true,
         speed: 1000,
         pagination: {
-          el: $block.find(".swiper-pagination")[0], // Pagination element
+          el: $block.find(".swiper-pagination")[0],
           clickable: true,
-        },
-        navigation: {
-          nextEl: nextButton, // Next navigation button
-          prevEl: prevButton, // Prev navigation button
         },
         breakpoints: {
           320: {
