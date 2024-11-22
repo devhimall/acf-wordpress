@@ -1,4 +1,5 @@
 <?php
+
 /**
  * The template for displaying the footer
  *
@@ -10,21 +11,6 @@
  */
 
 ?>
-
-<!-- Footer Start -->
-<div class="footer">
-	<div class="container">
-		<div class="copyright">
-			<p>&copy; Copyright <a href="https://htmlcodex.com">HTML Codex</a>. All Rights Reserved</p>
-			<p>Powered by <a href="https://htmlcodex.com">HTML Codex</a></p>
-		</div>
-	</div>
-</div>
-<!-- Footer end -->
-
-<!-- Back to Top -->
-<a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
-
 <!-- JavaScript Libraries -->
 <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>

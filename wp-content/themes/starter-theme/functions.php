@@ -270,7 +270,7 @@ add_action('wp_enqueue_scripts', 'portfolio_scripts');
  * Implement the Custom Header feature.
  */
 require get_template_directory() . '/inc/custom-header.php';
-
+		
 /**
  * Custom template tags for this theme.
  */
@@ -320,7 +320,7 @@ function my_register_blocks()
 				wp_enqueue_script('swiper-js', 'https://cdn.jsdelivr.net/npm/swiper@9/swiper-element-bundle.min.js', array(), '11.0.0', true);
 
 				wp_enqueue_style('block-slider', get_template_directory_uri() . '/assets/css/slider/testimonial-slider.css', array(), '1.0.0');
-				// wp_enqueue_script('block-slider', get_template_directory_uri() . '/assets/js/swiper.js', array(), '1.0.0', true);
+				wp_enqueue_script('block-slider', get_template_directory_uri() . '/assets/js/swiper.js', array(), '1.0.0', true);
 			},
 		));
 	}
